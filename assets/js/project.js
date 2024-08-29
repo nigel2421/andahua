@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Ela-Creatives",
-    cardImage: "assets/images/elacreatives.png",
+    cardImage: "assets/images/ela.png",
     description: "Flappy bird game built using React.js",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "https://elacreatives.com/",
