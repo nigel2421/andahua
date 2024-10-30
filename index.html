@@ -7,27 +7,28 @@
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta content="description" name="description">
   <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  <meta content="Portfolio" name="author">
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Nigel</title>
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+  <link href="./main.3f6952e4.css" rel="stylesheet">
+</head>
 
 <body class="minimal">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-<!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse">
-    <div class="container">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <!-- Add your content of header -->
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -35,34 +36,63 @@
           <span class="icon-bar"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./works.html" title="">02 : Works</a></li>
-          <li><a href="./about.html" title="">03 : About me</a></li>
-          <li><a href="./contact.html" title="">04 : Contact</a></li>
-          <li><a href="./components.html" title="">05 : Components</a></li>
-        </ul>
-
-
-      </div> 
-    </div>
-  </nav>
-</header>
-<!-- Add your site or app content here -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html" title="">01 : Home</a></li>
+            <li><a href="./works.html" title="">02 : Works</a></li>
+            <li><a href="./about.html" title="">03 : About me</a></li>
+            <li><a href="./contact.html" title="">04 : Contact</a></li>
+            <li><a href="./components.html" title="">05 : Components</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Add your site or app content here -->
   <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space.jpg')">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <div class="hero-full-wrapper">
             <div class="text-content">
-              <h1>Hello,<br>
-                <span id="typed-strings">
-                  <span>I'm James Dean</span>
-                  <span>French Designer</span>
-                  <span>Working as a Freelance</span>
+              <!-- First Typed Text -->
+              <h2>
+                <span id="typed-strings-1">
+                  <span>Hello my name is</span>
+                  <span>Sasa jina yangu ni</span>
+                  <span>Hamjambo jina yangu ni</span>
+                  <span>Hola, me llamo</span>
+                  <span>Bonjour, je m'appelle</span>
+                  <span>Hallo, mein Name ist</span>
+                  <span> Ciao, mi chiamo</span>
+                  <span>Olá, meu nome é</span>
+                  <span>Привет, меня зовут</span>
+                  <span>你好，我的名字是</span>
+                  <span>こんにちは、私の名前は</span>
+                  <span>안녕하세요, 제 이름은</span>
+                  <span>नमस्ते, मेरा नाम है</span>
+                  <span>مرحبا، اسمي</span>
+                  <span>Γεια, το όνομά μου είναι</span>
+                  <span>Cześć, mam na imię</span>
+                  <span>שלום, שמי</span>
                 </span>
-                <span id="typed"></span>
+                <span id="typed-1"></span><br>Nigel
+              </h2>
+
+              <!-- Second Typed Text -->
+              <h1>I'm a<br>
+                <span id="typed-strings-2">
+                  <span>Hospitality & Tourism Major</span>
+                  <span>Web Developer</span>
+                  <span>Project Manager</span>
+                  <span>Digital Marketer</span>
+                  <span>Content Creator</span>
+                  <span>Tech Guru</span>
+                  <span>Prompt Engineer</span>
+                  <span>Social Media Strategist</span>
+                  <span>Jack of Most Trades in Tech</span>
+                </span>
+                <span id="typed-2"></span>
               </h1>
             </div>
           </div>
@@ -71,14 +101,30 @@
     </div>
   </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     type();
-     movingBackgroundImage();
-  });
-</script>
+  <!-- Add the Typed.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      // Initialize the first typed instance
+      new Typed("#typed-1", {
+        stringsElement: "#typed-strings-1",
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
+      });
 
-<script type="text/javascript" src="./main.70a66962.js"></script></body>
+      // Initialize the second typed instance
+      new Typed("#typed-2", {
+        stringsElement: "#typed-strings-2",
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
+      });
+    });
+  </script>
+
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
 
 </html>
